@@ -7,15 +7,22 @@ function Number1 (value) {
 		temp = parseInt(value%10);
 		array1.push(temp);
 	}
-	return result.map((index, currentValue)=>{
-		for(let i = array1.begin; i != array1.end; ++i)
+	let count = 1;
+	for(let i = 0; i != array1.length; ++i)
+	{
+		for(let j = i+1; j != array1.length; ++j)
 		{
-			if(index == array1[i])
+			if(array1[i] == array1[j])
 			{
-				currentValue++;
+				count++;
 			}
 		}
-	});
+		if(count > 2)
+		{
+			return false;
+		}
+	}
+	return count > 1 ? true : false;
 }
 
-console.log(Number1(565));
+console.log(Number1(56215));
