@@ -1,4 +1,4 @@
-function Number4 (value) {
+function Number6 (value) {
 	let temp = 0;
 	let array1 = new Array();
 	for(; parseInt(value) != 0; value/=10)
