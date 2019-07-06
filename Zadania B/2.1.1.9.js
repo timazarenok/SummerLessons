@@ -17,5 +17,4 @@ function Number9 (value, k) {
 	return false;
 }
 
-
-console.log(Number9(678567, 2));
+console.log(Number9(678567, 4));
