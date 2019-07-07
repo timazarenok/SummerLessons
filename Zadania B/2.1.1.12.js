@@ -1,5 +1,5 @@
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
-function Number11 (value, k) {
+function Number12 (value, k) {
 	let temp = 0;
 	let array1 = new Array();
 	for(; parseInt(value) != 0; value/=10)
@@ -20,4 +20,4 @@ function Number11 (value, k) {
 	return count > k;
 }
 
-console.log(Number11(12789, 2));
+console.log(Number12(12789, 2));

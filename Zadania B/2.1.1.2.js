@@ -1,4 +1,4 @@
-function Number1 (value) {
+function Number2 (value) {
 	let temp = 0;
 	let array1 = new Array();
 	for(; parseInt(value) != 0; value/=10)
@@ -9,6 +9,7 @@ function Number1 (value) {
 	let count = 1;
 	for(let i = 0; i != array1.length; ++i)
 	{
+		count = 1;
 		for(let j = i+1; j != array1.length; ++j)
 		{
 			if(array1[i] == array1[j])
@@ -16,12 +17,7 @@ function Number1 (value) {
 				count++;
 			}
 		}
-		if(count > 2)
-		{
-			return false;
-		}
 	}
-	return count > 1 ? true : false;
 }
 
-console.log(Number1(52156));
+console.log(Number2(556656));
