@@ -19,4 +19,4 @@ function Number2 (n, m) {
 	}
 }
 
-Number2(1, 70)
+Number2(1, 70);
