@@ -6,7 +6,7 @@ function Number11 (n) {
 }
 
 Number11(10);
-
+	
 function gcd (a, b) {
 	let c = 0;
 	a = a < 0 ? -a : a;
