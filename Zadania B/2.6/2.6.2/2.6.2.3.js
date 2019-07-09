@@ -1,4 +1,9 @@
 function Number3 (k) {
-	return Math.pow(2, k-1);
+		let str = '';
+	for(let i = 0; i != 20; ++i)
+	{
+		str += Math.pow(2, i);
+	}
+	return str[k-1];
 }
-console.log(Number1(4));
+console.log(Number3(4));
