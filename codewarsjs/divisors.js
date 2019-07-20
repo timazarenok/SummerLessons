@@ -30,7 +30,7 @@ function SimpleNumber(value){
 	return true;
 }
 
-console.log(divisors(1));
+console.log(divisors(13));
 
 // ............................................
 function divisors(integer) {

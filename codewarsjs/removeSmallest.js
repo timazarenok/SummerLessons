@@ -10,7 +10,6 @@ function removeSmallest(numbers) {
 		}
 	}
 	numbers2.splice(index, 1);
-	console.log(numbers2);
 	return numbers = numbers2;
 
 }
