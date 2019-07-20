@@ -1,11 +1,5 @@
 function divisors(integer) {
-	if(integer <= 1){
-		return [];
-	}
-	if(SimpleNumber(integer)) {
-		return `${integer} is prime`;
-	}
-	let array = [];
+let array = [];
   for(let i = 2; i != integer; ++i) {
   	if(integer%i == 0) {
   		array.push(i);
