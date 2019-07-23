@@ -14,9 +14,13 @@ function convertTo2 (value) {
 	return result.split('').reverse().join('');
 }
 
-function number9 (value) {
-	for(let i = 0; i != value; ++i) {
+function number9 () {
+	for(let i = 0; i != 100; ++i) {
 		i = i.toString();
-		return isPolindrom(convertTo2(i)) && isPolindrom(i);
+		if(isPolindrom(convertTo2(i)) && isPolindrom(i)) {
+			console.log(i);
+		}
 	}
 }
+
+number9();
