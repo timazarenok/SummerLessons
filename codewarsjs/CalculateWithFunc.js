@@ -1,38 +1,22 @@
-function expression(number, operation){
-	if(!operation)
-		return number;
-	return operation(number);
-}
+function callback(number, operator) {
+  if(!operator) {
+    return number;
+  }
+  return operator(number);
+}  
 
-function zero(operation) { return expression(0, operation); }
-function one(operation) { return expression(1, operation); }
-function two(operation) { return expression(2, operation); }
-function three(operation) { return expression(3, operation); }
-function four(operation) { return expression(4, operation); }
-function five(operation) { return expression(5, operation); }
-function six(operation) { return expression(6, operation); }
-function seven(operation) { return expression(7, operation); }
-function eight(operation) { return expression(8, operation); }
-function nine(operation) { return expression(9, operation); }
+function zero(operator) { return callback(0, operator)}
+function one(operator) { return callback(1, operator)}
+function two(operator) { return callback(2, operator)}
+function three(operator) { return callback(3, operator)}
+function four(operator) { return callback(4, operator)}
+function five(operator) { return callback(5, operator)}
+function six(operator) { return callback(6, operator)}
+function seven(operator) { return callback(7, operator)}
+function eight(operator){ return callback(8, operator)}
+function nine(operator){ return callback(9, operator)}
 
-function plus(value) {
-	return function(y){
-		return y + value;
-	};
-}
-
-function minus(value) {
-		return function(y){
-		return y - value;
-	};
-}
-function times(value) {
-		return function(y){
-		return y * value;
-	};
-}
-function dividedBy(value) {
-		return function(y){
-		return Math.floor(y / value);
-	};
-}
+function plus(number) { return function(value){ return number + value}}
+function minus(number) { return function(value){ return  value - number}}
+function times(number) { return function(value){ return number * value}}
+function dividedBy(number) { return function(value){ return parseInt(value/number)}}
